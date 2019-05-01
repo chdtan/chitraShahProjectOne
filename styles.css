@@ -8,13 +8,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 html {
     font-size: 125%;
-    
+    background-color: #fcfbfb;
 }
 
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-
 }
 
 img {
@@ -41,6 +40,7 @@ button {
     background-color: #ba0621;
     border: none;
     text-transform: uppercase;
+    display: block;
 }
 
 
@@ -48,7 +48,7 @@ button {
 
 
 header {
-    background-image: url(../project1/images/headerimage/image-1@2x.png);
+    background-image: url(./images/image-1@2x.png);
     min-height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -57,6 +57,15 @@ header {
     color: white;
     position: relative;
 }
+
+.intropage i{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    visibility: hidden; 
+}   
+
 
 ul {
     list-style-type: none;
@@ -100,12 +109,14 @@ h1 {
     color: #cc1d36;
     text-align: left; 
 }
+
 .intropage p {
     display: block;
     font-family: 'Lato', sans-serif;
     font-size: 31px;
     color: #fcfbfb;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-bottom: 128px;
     margin-left: 7px;
 }
@@ -140,9 +151,6 @@ header p{
     padding: 93px 0;
 }
 
-.gallery {
-    width: calc((100 / 3) - 80px);
-}
 
 .gallery img {
     float: left;
@@ -167,8 +175,8 @@ header p{
     padding-top: 115px; 
 }
 
-.highlightArticle2 h2{
-    padding-top: 93px;
+.right-text h2{
+    padding: 0;
 }
 
 .highlightArticle2 p {
@@ -186,95 +194,417 @@ header p{
     max-width: 1600px;
     padding-top: 112px;
     margin: 0 auto;
+    background-color: #fcfbfb;
 }
-
-/* .modelsArticle3 {
-    width: calc(100% / 2);
-    margin: 0 auto;
-    padding-top: 112px;
-    position: relative;
-} */
 
 .left-text {
     float: left;
-    margin-left: 160px;
-    width: 800px;
-    color: #1f2022;
-    position: absolute; 
-    left: 5%;
+    margin-left: 158px;
+    width: 40%;
+    color: #00050f;
     padding: 136px 0;
+    display: block;
+    
 } 
 
 .left-text h2 {
-    width: 342px;
+    width: 53%;
     line-height: 1.02;
 } 
 
 .left-text p {
-    width: 560px;
+    width: 89%;
 }    
 
-.image-right {
+.image-right img {
     float: right;
-    width: 800px;
 }
 
 
 /* Drive in the style in the night styles */
 
 .driveArticle4 {
-    /* width: calc(100% / 2);
     margin: 0 auto;
-    padding-top: 112px;
-    position: relative; */
-    /* border: 1px solid salmon; */
+    padding: 0;
 }
 
-.far-left {
+.far-left img {
     float: left;
-    width: 798px;
-    /* border: 1px solid greenyellow;    */
+    /* width: 798px; */
 }
+
+
 
 .righty {
-    /* border: 1px solid greenyellow; */
     float: right;
-    width: 798px;
+    width: 40%;
     color: #1f2022;
     padding: 136px 0;
-    
+    display: block;
 } 
 
 .righty h2{
-    width: 545px;
     line-height: 1.02;
+    width: 70%;
+
 } 
 
 .righty p {
-    width: 560px;
+    width: 87%;
 }    
 
 /* Icon Article styles */
 
 .finalArticle5 {
-    clear: both;
-    background:url(./images/galleryimages 2,3,4/image-9-oscar-aguilar-327500-unsplash.png)
+    background-image: url(images/image-9-oscar-aguilar-327500-unsplash.png);
+    background-size: cover;
+    background-position: no-repeat;
+    background-position: center;
+    height: 100%; 
 }  
 
-
-.finalArticle5 li {
-    float: left;
+.fasgroup {
+    color: white;
+    text-align: center;
+    margin: 0;
 }
 
-.fasgroup {
+.finalArticle5 li {
+    display: block;
+    float: left;
+    width: calc((100% / 3) - 20px);
+    margin: 0 10px;
+    height: 50%;
+    padding: 113px;    
+}
+
+.finalArticle5 i{
+    text-align: center;
+    font-size: 57px;
+    color: #cc1d36;
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-family:'Kanit', sans-serif;
+    font-size: 31.2px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fcfbfb;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Contact details styles */
+
+
+.contactDeets {
+    background-color: #6c0918;
+    background-size: cover;
+    background-position: center center;
+    color:#fcfbfb;
+    height: 340px;
+    padding: 93px 0; 
+    display: block;
     
 }
 
+.contactDeets h4 {
+    margin: 0;
+    font-family: 'Kanit',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.contactDeets p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.deetsEmail,
+.deetsContact,
+.deetsNav2 {
+    float: left;
+    width: calc((100 / 3) - 80px)
+}
+
+.deetsEmail {
+    width: 43%;
+}
+.deetsContact {
+    width: 22%;
+    line-height: 1.45;
+}
+
+.deetsNav2 {
+    width: 12%;
+    text-align: right;
+    line-height: 1.45;
+}
+
+.deetsNav2 ul{
+    margin: 0;
+}
+
+.deetsEmail {
+    margin-left: 160px;
+}
+
+form {
+    border: none;
+}
+
+input[type=email] {
+    width: 60%;
+	height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', serif;
+    color: #232323;
+    text-decoration: none;
+    border: none;
+}
+
+input[type=submit] {
+    width: 22%;
+    height: 50px;
+	color: #fcfbfb;
+	background:#000000;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* footer styles */
+
+footer {
+    background-color: #0b0101;
+
+}
+
+.copyright p{
+    margin: 0;
+    color: #fcfbfb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: block;
+    padding: 14px 0;
+    text-align: center;
+}
+
+/* Media queries styles */
+
+@media (max-width: 1599px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .left-text {
+        width: 30%
+    }
+
+    .left-text h2 {
+        font-size: 45%;
+    }
+
+    .left-text p{
+        font-size: 75%;
+    }
+
+    .righty h2 {
+        font-size: 45%;
+    }
+
+    .righty p{
+        font-size: 75%;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1419px) {
+
+    .wrapper {
+        width: 75%;
+    }
+
+    .left-text {
+        width: 28%
+    }
+
+    .left-text h2 {
+        font-size: 40%;
+    }
+
+    .left-text p{
+        font-size: 60%;
+    }
+
+    .righty {
+        width: 30%;
+    }
+
+    .righty h2 {
+        font-size: 30%;
+    }
+
+    .righty p{
+        font-size: 60%;
+        
+    }
+
+    img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (max-width: 1334px) {
+
+    .wrapper {
+        width: 65%
+    }
+    
+
+    .left-image {
+        float: none;
+        margin-right: 0;
+    }
+
+    img.left-image {
+        width: 100%;
+    }
+
+    img.remove {
+        padding: 0;
+        display: none;
+    }
+
+    .gallery img:nth-child(2) {
+        width: 50%;
+        padding: 0 25px;
+    }
+    
+    img {
+        width: 50%;
+    }    
+
+    .gallery img {
+        padding: 0 25px;
+    }
+    
+    button {
+        display: inline;
+    }
+}
+
+@media (max-width: 960px){
+    header {
+        background-image: url(./images/image-1@2x.png);
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+    .intropage h1 {
+        margin-top: 0;
+    }
+    .intropage nav {
+        display: none;  
+    }
+    .intropage i{
+        visibility: visible; 
+    }   
+    .fagroup {
+        display: none;
+    }
+    .intropage h1, 
+    .intropage p{
+        margin-left: 50px;
+    }
+    
+    .image-right {
+        float: none;
+    }
+
+    .left-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-text p {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .left-text h2 {
+        font-size: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 800px){
+
+    .finalArticle5 li {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 0 10px;
+        text-align: center;
+        
+    }
+
+    .contactDeets {
+        height: 100%;
+    }
+    
+    .deetsEmail {
+        float: none;
+        width: 90%;
+        text-align: center;
+    }
+
+
+    input[type=submit] {
+        width: 40%;
+    }
+}   
 
 
 
+@media (max-width: 400px) {
+    
+    img {
+        width: 50%;
+    }
 
+    .deetsEmail {
+        float: left;
+        display:block;
+        margin: 0 auto;
+    }
 
-
-
-
+    .deetsEmail p {
+        width: 50%;
+    }
+}
+    .deetsContact,
+    .deetsNav2 {
+        float: left;
+        width: 50%;
+    }
